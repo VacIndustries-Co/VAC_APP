@@ -1,6 +1,11 @@
 # VacApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+and use  Node version 18.16.1 and npm version 9.5.1
+
+## CLI INSTALLATION COMMAND
+
+* `npm install -g @angular/cli@16.1.4`
 
 ## Development server
 
@@ -22,6 +27,6 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+## Running and opening project
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Run this command `ng s -o`.
