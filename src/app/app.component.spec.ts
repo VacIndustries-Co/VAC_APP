@@ -2,13 +2,14 @@ import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
-  beforeEach(() => TestBed.configureTestingModule({
+  beforeEach(() => {TestBed.configureTestingModule({
     declarations: [AppComponent]
-  }));
+  })
+  const fixture = TestBed.createComponent(AppComponent);
+  const app = fixture.componentInstance;
+
 
   it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
     expect(app).toBeTruthy();
   });
 
@@ -22,6 +23,8 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.div p')?.textContent).toContain('Welcome to VAC');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('Welcome to VAC');
   });
+});
+
 });
